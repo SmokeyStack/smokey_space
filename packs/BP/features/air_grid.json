@@ -1,0 +1,31 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:scatter_feature": {
+        "description": {
+            "identifier": "smokey_space:air_grid"
+        },
+        "iterations": 81920,
+        "places_feature": "smokey_space:air",
+        "x": {
+            "extent": [
+                0,
+                15
+            ],
+            "distribution": "fixed_grid"
+        },
+        "z": {
+            "extent": [
+                0,
+                15
+            ],
+            "distribution": "fixed_grid"
+        },
+        "y": {
+            "extent": [
+                0,
+                319
+            ],
+            "distribution": "fixed_grid"
+        }
+    }
+}

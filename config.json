@@ -1,0 +1,21 @@
+{
+  "name": "smokey_space",
+  "author": "SmokeyStack",
+  "packs": {
+    "behaviorPack": "./packs/BP",
+    "resourcePack": "./packs/RP"
+  },
+  "regolith": {
+    "profiles": {
+      "default": {
+        "filters": [],
+        "export": {
+          "target": "development",
+          "readOnly": false
+        }
+      }
+    },
+    "filterDefinitions": {},
+    "dataPath": "./packs/data"
+  }
+}
