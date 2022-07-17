@@ -11,7 +11,7 @@
         ],
         "min_engine_version": [
             1,
-            18,
+            19,
             0
         ]
     },
@@ -22,6 +22,26 @@
             "version": [
                 1,
                 0,
+                0
+            ]
+        },
+        {
+            "type": "script",
+            "entry": "scripts/index.js",
+            "uuid": "e28dbba9-168b-4227-83ba-fd828bd24e38",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "b26a4d4c-afdf-4690-88f8-931846312678",
+            "version": [
+                0,
+                1,
                 0
             ]
         }
