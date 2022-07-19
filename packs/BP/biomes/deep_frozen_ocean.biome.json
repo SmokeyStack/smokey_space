@@ -11,7 +11,7 @@
                     0.125,
                     0.25
                 ],
-                "temperature": 0.0
+                "temperature": 2.0
             },
             "minecraft:frozen_ocean_surface": {
                 "sea_floor_depth": 64,

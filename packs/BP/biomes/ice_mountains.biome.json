@@ -11,7 +11,7 @@
                     0.375,
                     1.5
                 ],
-                "temperature": 0.0
+                "temperature": 2.0
             },
             "minecraft:overworld_height": {
                 "noise_type": "mountains"

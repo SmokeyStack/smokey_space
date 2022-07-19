@@ -7,7 +7,7 @@
         "components": {
             "minecraft:climate": {
                 "downfall": 0.8,
-                "temperature": 0.3
+                "temperature": 2.0
             },
             "minecraft:surface_parameters": {
                 "sea_floor_depth": 64,

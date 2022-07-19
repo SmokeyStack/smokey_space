@@ -7,7 +7,7 @@
         "components": {
             "minecraft:climate": {
                 "downfall": 0.3,
-                "temperature": 1.0
+                "temperature": 2.0
             },
             "minecraft:mountain_parameters": {
                 "peaks_factor": 1,

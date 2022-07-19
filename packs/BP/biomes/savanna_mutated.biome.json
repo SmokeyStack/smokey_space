@@ -11,7 +11,7 @@
                     0.0,
                     0.125
                 ],
-                "temperature": 1.1
+                "temperature": 2.0
             },
             "minecraft:overworld_height": {
                 "noise_params": [

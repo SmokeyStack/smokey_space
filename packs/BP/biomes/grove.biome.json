@@ -11,7 +11,7 @@
                     0.125,
                     0.25
                 ],
-                "temperature": -0.2
+                "temperature": 2.0
             },
             "minecraft:surface_parameters": {
                 "sea_floor_depth": 64,
