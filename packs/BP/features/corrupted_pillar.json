@@ -1,0 +1,61 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:growing_plant_feature": {
+        "description": {
+            "identifier": "smokey_space:corrupted_pillar"
+        },
+        "height_distribution": [
+            [
+                {
+                    "range_min": 10,
+                    "range_max": 16
+                },
+                5
+            ],
+            [
+                {
+                    "range_min": 1,
+                    "range_max": 2
+                },
+                15
+            ],
+            [
+                {
+                    "range_min": 1,
+                    "range_max": 8
+                },
+                30
+            ]
+        ],
+        "growth_direction": "UP",
+        "body_blocks": [
+            [
+                "minecraft:sculk",
+                4
+            ],
+            [
+                "minecraft:crying_obsidian",
+                1
+            ]
+        ],
+        "head_blocks": [
+            [
+                "minecraft:sculk_catalyst",
+                3
+            ],
+            [
+                "minecraft:sculk_sensor",
+                4
+            ],
+            [
+                {
+                    "name": "minecraft:sculk_shrieker",
+                    "states": {
+                        "can_summon": true
+                    }
+                },
+                5
+            ]
+        ]
+    }
+}

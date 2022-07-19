@@ -1,0 +1,19 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:scatter_feature": {
+        "description": {
+            "identifier": "smokey_space:island_two"
+        },
+        "iterations": "t.height_1 = q.noise(v.worldx/2048, v.worldz/1024); t.height_2 = q.noise(v.worldz/512, v.worldx/256); t.height_3 = q.noise(t.height_1/128, t.height_2/64); t.height = (t.height_1 + t.height_2 +t.height_3) * 32; return t.height;",
+        "places_feature": "smokey_space:island_block",
+        "x": 0,
+        "z": 0,
+        "y": {
+            "extent": [
+                "0-t.height",
+                0
+            ],
+            "distribution": "fixed_grid"
+        }
+    }
+}

@@ -2,23 +2,18 @@
     "format_version": "1.13.0",
     "minecraft:feature_rules": {
         "description": {
-            "identifier": "smokey_space:air_replacement",
-            "places_feature": "smokey_space:air_grid"
+            "identifier": "smokey_space:corrupted_tree_feature",
+            "places_feature": "smokey_space:corrupted_tree"
         },
         "conditions": {
-            "placement_pass": "first_pass",
+            "placement_pass": "surface_pass",
             "minecraft:biome_filter": [
                 {
                     "any_of": [
                         {
                             "test": "has_biome_tag",
                             "operator": "==",
-                            "value": "overworld"
-                        },
-                        {
-                            "test": "has_biome_tag",
-                            "operator": "==",
-                            "value": "overworld_generation"
+                            "value": "frozen"
                         }
                     ]
                 }
@@ -26,9 +21,13 @@
         },
         "distribution": {
             "iterations": 1,
-            "x": 0,
-            "z": 0,
-            "y": -64
+            "scatter_chance": {
+                "numerator": 1,
+                "denominator": 10
+            },
+            "x": 8,
+            "y": 64,
+            "z": 8
         }
     }
 }

@@ -1,0 +1,29 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "SmokeyStack's Space (add-on) Jam",
+        "description": "Made by SmokeyStack",
+        "uuid": "6ab73283-397c-4014-ba0c-26f3e69b7943",
+        "version": [
+            1,
+            0,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            18,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "type": "resources",
+            "uuid": "2cc02088-1be9-4442-b1d6-41b1cc479c0c",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ]
+}

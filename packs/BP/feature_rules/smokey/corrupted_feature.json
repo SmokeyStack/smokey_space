@@ -2,44 +2,43 @@
     "format_version": "1.13.0",
     "minecraft:feature_rules": {
         "description": {
-            "identifier": "smokey_space:island_feature",
-            "places_feature": "smokey_space:check_island"
+            "identifier": "smokey_space:corrupted_feature",
+            "places_feature": "smokey_space:corrupted_pillar_search"
         },
         "conditions": {
-            "placement_pass": "before_underground_pass",
+            "placement_pass": "surface_pass",
             "minecraft:biome_filter": [
                 {
                     "any_of": [
                         {
                             "test": "has_biome_tag",
                             "operator": "==",
-                            "value": "overworld"
-                        },
-                        {
-                            "test": "has_biome_tag",
-                            "operator": "==",
-                            "value": "overworld_generation"
+                            "value": "frozen"
                         }
                     ]
                 }
             ]
         },
         "distribution": {
-            "iterations": 256,
+            "iterations": "Math.random(1, 256)",
+            "scatter_chance": {
+                "numerator": 1,
+                "denominator": 5
+            },
             "x": {
                 "extent": [
-                    0,
+                    -15,
                     15
                 ],
-                "distribution": "fixed_grid"
+                "distribution": "uniform"
             },
             "y": 64,
             "z": {
                 "extent": [
-                    0,
+                    -15,
                     15
                 ],
-                "distribution": "fixed_grid"
+                "distribution": "uniform"
             }
         }
     }
