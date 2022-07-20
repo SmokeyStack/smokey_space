@@ -1,0 +1,32 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "smokey_space:eye",
+            "materials": {
+                "default": "bee"
+            },
+            "textures": {
+                "default": "textures/entity/eye"
+            },
+            "geometry": {
+                "default": "geometry.eye"
+            },
+            "animations": {
+                "flying": "animation.eye.flying"
+            },
+            "scripts": {
+                "animate": [
+                    "flying"
+                ]
+            },
+            "render_controllers": [
+                "controller.render.bat"
+            ],
+            "spawn_egg": {
+                "texture": "egg_bee",
+                "texture_index": 0
+            }
+        }
+    }
+}
