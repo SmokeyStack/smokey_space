@@ -4,7 +4,7 @@
         "description": {
             "identifier": "smokey_space:eye",
             "materials": {
-                "default": "bee"
+                "default": "entity_alphatest"
             },
             "textures": {
                 "default": "textures/entity/eye"
@@ -21,7 +21,7 @@
                 ]
             },
             "render_controllers": [
-                "controller.render.bat"
+                "controller.render.cow"
             ],
             "spawn_egg": {
                 "texture": "egg_bee",

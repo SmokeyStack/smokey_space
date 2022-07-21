@@ -20,9 +20,10 @@
                         "filters": {
                             "any_of": [
                                 {
+                                    "operator": "!=",
                                     "subject": "other",
                                     "test": "is_family",
-                                    "value": "monster"
+                                    "value": "smokey"
                                 }
                             ]
                         },
@@ -37,8 +38,8 @@
             },
             "minecraft:behavior.random_hover": {
                 "hover_height": [
-                    5,
-                    10
+                    10,
+                    15
                 ],
                 "interval": 1,
                 "priority": 12,
@@ -48,16 +49,16 @@
             },
             "minecraft:behavior.sonic_boom": {
                 "attack_cooldown": 2,
-                "attack_damage": 10,
-                "attack_range_horizontal": 15,
+                "attack_damage": 20,
+                "attack_range_horizontal": 20,
                 "attack_range_vertical": 20,
                 "attack_sound": "sonic_boom",
                 "charge_sound": "sonic_charge",
                 "duration": 3,
                 "duration_until_attack_sound": 1.7,
-                "knockback_height_cap": 0.5,
-                "knockback_horizontal_strength": 2.5,
-                "knockback_vertical_strength": 0.5,
+                "knockback_height_cap": 1,
+                "knockback_horizontal_strength": 5,
+                "knockback_vertical_strength": 5,
                 "priority": 3,
                 "speed_multiplier": 1.2
             },
@@ -84,8 +85,8 @@
                 "value": 1024
             },
             "minecraft:health": {
-                "max": 10,
-                "value": 10
+                "max": 50,
+                "value": 50
             },
             "minecraft:hurt_on_condition": {
                 "damage_conditions": [
@@ -103,11 +104,6 @@
             },
             "minecraft:is_hidden_when_invisible": {},
             "minecraft:jump.static": {},
-            "minecraft:leashable": {
-                "hard_distance": 6,
-                "max_distance": 10,
-                "soft_distance": 4
-            },
             "minecraft:movement": {
                 "value": 0.3
             },
@@ -129,9 +125,8 @@
             },
             "minecraft:type_family": {
                 "family": [
-                    "bee",
                     "mob",
-                    "arthropod"
+                    "smokey"
                 ]
             }
         },
