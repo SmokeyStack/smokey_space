@@ -2,8 +2,8 @@
     "format_version": "1.13.0",
     "minecraft:feature_rules": {
         "description": {
-            "identifier": "smokey_space:corrupted_feature",
-            "places_feature": "smokey_space:corrupted_pillar_search"
+            "identifier": "smokey_space:warped_vines_feature",
+            "places_feature": "smokey_space:warped/warped_vines_snap"
         },
         "conditions": {
             "placement_pass": "surface_pass",
@@ -13,18 +13,14 @@
                         {
                             "test": "has_biome_tag",
                             "operator": "==",
-                            "value": "frozen"
+                            "value": "jungle"
                         }
                     ]
                 }
             ]
         },
         "distribution": {
-            "iterations": "Math.random(128, 256)",
-            "scatter_chance": {
-                "numerator": 1,
-                "denominator": 5
-            },
+            "iterations": "Math.random(16, 128)",
             "x": {
                 "extent": [
                     -15,

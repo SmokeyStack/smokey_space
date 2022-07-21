@@ -1,0 +1,19 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:conditional_list": {
+        "description": {
+            "identifier": "smokey_space:warped/warped_biome"
+        },
+        "conditional_features": [
+            {
+                "places_feature": "smokey_space:warped/warped_surface",
+                "condition": "query.noise(v.worldx/196, v.worldz/196) > 0.5"
+            },
+            {
+                "places_feature": "smokey_space:warped/warped_surface_two",
+                "condition": "query.noise(v.worldx/128, v.worldz/128) > 0.25"
+            }
+        ],
+        "early_out_scheme": "placement_success"
+    }
+}
