@@ -20,28 +20,10 @@
             ]
         },
         "distribution": {
-            "iterations": 256,
-            "x": {
-                "extent": [
-                    0,
-                    15
-                ],
-                "distribution": "uniform"
-            },
-            "y": {
-                "extent": [
-                    50,
-                    70
-                ],
-                "distribution": "uniform"
-            },
-            "z": {
-                "extent": [
-                    0,
-                    15
-                ],
-                "distribution": "uniform"
-            }
+            "iterations": 1,
+            "x": 0,
+            "y": -64,
+            "z": 0
         }
     }
 }

@@ -20,7 +20,7 @@
             ]
         },
         "distribution": {
-            "iterations": "Math.random(1, 256)",
+            "iterations": "Math.random(128, 256)",
             "scatter_chance": {
                 "numerator": 1,
                 "denominator": 5
@@ -32,7 +32,13 @@
                 ],
                 "distribution": "uniform"
             },
-            "y": 64,
+            "y": {
+                "extent": [
+                    64,
+                    70
+                ],
+                "distribution": "uniform"
+            },
             "z": {
                 "extent": [
                     -15,
