@@ -2,8 +2,8 @@
     "format_version": "1.13.0",
     "minecraft:feature_rules": {
         "description": {
-            "identifier": "smokey_space:corrupted_patch_feature",
-            "places_feature": "smokey_space:corrupted_patch"
+            "identifier": "smokey_space:corrupted_biome_builder",
+            "places_feature": "smokey_space:corruption/corrupted_biome"
         },
         "conditions": {
             "placement_pass": "before_surface_pass",
@@ -20,10 +20,22 @@
             ]
         },
         "distribution": {
-            "iterations": 1,
-            "x": 0,
-            "y": -64,
-            "z": 0
+            "iterations": 256,
+            "x": {
+                "extent": [
+                    0,
+                    15
+                ],
+                "distribution": "fixed_grid"
+            },
+            "y": "q.above_top_solid(v.worldx, v.worldz)-1",
+            "z": {
+                "extent": [
+                    0,
+                    15
+                ],
+                "distribution": "fixed_grid"
+            }
         }
     }
 }

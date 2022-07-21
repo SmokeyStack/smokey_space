@@ -2,10 +2,10 @@
     "format_version": "1.13.0",
     "minecraft:scatter_feature": {
         "description": {
-            "identifier": "smokey_space:warped/warped_surface"
+            "identifier": "smokey_space:corruption/corrupted_surface"
         },
         "iterations": 5,
-        "places_feature": "smokey_space:warped/warped",
+        "places_feature": "smokey_space:corruption/corruption",
         "x": 0,
         "z": 0,
         "y": {
