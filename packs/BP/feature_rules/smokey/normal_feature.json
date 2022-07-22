@@ -1,0 +1,47 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:feature_rules": {
+        "description": {
+            "identifier": "smokey_space:normal_feature",
+            "places_feature": "minecraft:random_clay_with_dripleaves_snap_to_floor_feature"
+        },
+        "conditions": {
+            "placement_pass": "before_surface_pass",
+            "minecraft:biome_filter": [
+                {
+                    "any_of": [
+                        {
+                            "test": "has_biome_tag",
+                            "operator": "==",
+                            "value": "plains"
+                        }
+                    ]
+                }
+            ]
+        },
+        "distribution": {
+            "iterations": 52,
+            "x": {
+                "distribution": "uniform",
+                "extent": [
+                    0,
+                    16
+                ]
+            },
+            "y": {
+                "distribution": "uniform",
+                "extent": [
+                    64,
+                    100
+                ]
+            },
+            "z": {
+                "distribution": "uniform",
+                "extent": [
+                    0,
+                    16
+                ]
+            }
+        }
+    }
+}

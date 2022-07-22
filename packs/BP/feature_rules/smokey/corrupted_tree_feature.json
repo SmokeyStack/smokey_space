@@ -23,29 +23,11 @@
             "iterations": 1,
             "scatter_chance": {
                 "numerator": 1,
-                "denominator": 10
+                "denominator": 5
             },
-            "x": {
-                "extent": [
-                    -15,
-                    15
-                ],
-                "distribution": "uniform"
-            },
-            "y": {
-                "extent": [
-                    64,
-                    100
-                ],
-                "distribution": "uniform"
-            },
-            "z": {
-                "extent": [
-                    -15,
-                    15
-                ],
-                "distribution": "uniform"
-            }
+            "x": 8,
+            "y": 66,
+            "z": 8
         }
     }
 }

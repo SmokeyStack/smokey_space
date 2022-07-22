@@ -1,0 +1,19 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:ore_feature": {
+        "description": {
+            "identifier": "smokey_space:end_blob"
+        },
+        "count": 99,
+        "replace_rules": [
+            {
+                "places_block": "minecraft:end_stone",
+                "may_replace": [
+                    {
+                        "name": "minecraft:air"
+                    }
+                ]
+            }
+        ]
+    }
+}

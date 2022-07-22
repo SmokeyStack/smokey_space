@@ -20,14 +20,11 @@
             "minecraft:air"
         ],
         "may_grow_through": [
-            "minecraft:dirt",
-            "minecraft:grass",
-            {
-                "name": "minecraft:dirt",
-                "states": {
-                    "dirt_type": "coarse"
-                }
-            }
+            "minecraft:sculk",
+            "minecraft:air",
+            "minecraft:sculk_catalyst",
+            "minecraft:sculk_shrieker",
+            "minecraft:crying_obsidian"
         ],
         "fancy_trunk": {
             "trunk_height": {

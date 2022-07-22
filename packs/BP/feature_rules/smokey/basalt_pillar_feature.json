@@ -2,32 +2,32 @@
     "format_version": "1.13.0",
     "minecraft:feature_rules": {
         "description": {
-            "identifier": "smokey_space:corrupted_feature",
-            "places_feature": "smokey_space:corrupted_pillar_search"
+            "identifier": "smokey_space:basalt_pillar_feature",
+            "places_feature": "smokey_space:volcano/basalt_pillar_search"
         },
         "conditions": {
-            "placement_pass": "after_surface_pass",
+            "placement_pass": "surface_pass",
             "minecraft:biome_filter": [
                 {
                     "any_of": [
                         {
                             "test": "has_biome_tag",
                             "operator": "==",
-                            "value": "frozen"
+                            "value": "forest"
                         }
                     ]
                 }
             ]
         },
         "distribution": {
-            "iterations": "Math.random(128, 256)",
+            "iterations": 256,
             "scatter_chance": {
-                "numerator": 1,
-                "denominator": 5
+                "numerator": 9,
+                "denominator": 10
             },
             "x": {
                 "extent": [
-                    -15,
+                    0,
                     15
                 ],
                 "distribution": "uniform"
@@ -41,7 +41,7 @@
             },
             "z": {
                 "extent": [
-                    -15,
+                    0,
                     15
                 ],
                 "distribution": "uniform"

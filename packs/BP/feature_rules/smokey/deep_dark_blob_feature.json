@@ -1,50 +1,50 @@
 {
-    "format_version": "1.13.0",
+    "format_version": "1.16.0",
     "minecraft:feature_rules": {
         "description": {
-            "identifier": "smokey_space:corrupted_feature",
-            "places_feature": "smokey_space:corrupted_pillar_search"
+            "identifier": "smokey_space:deep_dark_blob_feature",
+            "places_feature": "smokey_space:deep_dark_blob"
         },
         "conditions": {
-            "placement_pass": "after_surface_pass",
+            "placement_pass": "before_surface_pass",
             "minecraft:biome_filter": [
                 {
                     "any_of": [
                         {
                             "test": "has_biome_tag",
                             "operator": "==",
-                            "value": "frozen"
+                            "value": "deep_dark"
                         }
                     ]
                 }
             ]
         },
         "distribution": {
-            "iterations": "Math.random(128, 256)",
+            "iterations": 16,
             "scatter_chance": {
                 "numerator": 1,
                 "denominator": 5
             },
             "x": {
+                "distribution": "uniform",
                 "extent": [
-                    -15,
-                    15
-                ],
-                "distribution": "uniform"
+                    0,
+                    16
+                ]
             },
             "y": {
+                "distribution": "uniform",
                 "extent": [
-                    64,
-                    100
-                ],
-                "distribution": "uniform"
+                    -64,
+                    32
+                ]
             },
             "z": {
+                "distribution": "uniform",
                 "extent": [
-                    -15,
-                    15
-                ],
-                "distribution": "uniform"
+                    0,
+                    16
+                ]
             }
         }
     }

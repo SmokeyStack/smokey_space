@@ -1,0 +1,41 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:feature_rules": {
+        "description": {
+            "identifier": "smokey_space:desert_biome_builder",
+            "places_feature": "smokey_space:desert/desert_biome"
+        },
+        "conditions": {
+            "placement_pass": "before_surface_pass",
+            "minecraft:biome_filter": [
+                {
+                    "any_of": [
+                        {
+                            "test": "has_biome_tag",
+                            "operator": "==",
+                            "value": "desert"
+                        }
+                    ]
+                }
+            ]
+        },
+        "distribution": {
+            "iterations": 256,
+            "x": {
+                "extent": [
+                    0,
+                    15
+                ],
+                "distribution": "fixed_grid"
+            },
+            "y": "q.above_top_solid(v.worldx, v.worldz)-1",
+            "z": {
+                "extent": [
+                    0,
+                    15
+                ],
+                "distribution": "fixed_grid"
+            }
+        }
+    }
+}
